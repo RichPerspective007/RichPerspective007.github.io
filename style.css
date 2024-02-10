@@ -1,0 +1,46 @@
+/* styles.css */
+/* styles.css */
+/* styles.css */
+body {
+    background-image: url('cake.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure background covers the entire viewport */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    flex-grow: 1; /* Allow container to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center {
+    display: inline-block;
+}
+
+#photoSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Set height to 50% of the viewport height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+
+#countdown, #birthdayMessage {
+    font-size: 50px;
+    font-family: 'Honk', 'Libre Baskerville', system-ui;
+}
+
+.sliderImage{
+    display: none;
+    max-width: 100%; /* Ensure image does not exceed container width */
+    max-height: 100%; /* Ensure image does not exceed container height */
+    object-fit: contain; /* Fit the entire image within the container while maintaining aspect ratio */
+}
